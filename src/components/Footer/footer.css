@@ -1,0 +1,97 @@
+/* src/components/footer.css */
+.footer {
+  width: 100%;
+  background-color: chocolate;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #f39c12; /* Highlight color on hover */
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-link {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #f39c12; /* Highlight color on hover */
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .footer-nav {
+    flex-direction: column;
+  }
+
+  .footer-link {
+    margin: 10px 0;
+  }
+
+  .social-link {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-links {
+    gap: 15px; /* Reduce gap between links */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 8px;
+  }
+}

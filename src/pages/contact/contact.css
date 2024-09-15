@@ -1,0 +1,73 @@
+/* src/pages/contact/contact.css */
+
+.contact {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: chocolate;
+  }
+  
+  .contact-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  .contact-submit {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color:chocolate;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-submit:hover {
+    background-color:rgb(194, 122, 71);
+  }
+  
+  .contact-info {
+    margin-top: 40px;
+  }
+  
+  .contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  

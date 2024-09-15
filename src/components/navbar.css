@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: chocolate;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;  /* Ensures the navbar stays at the top when scrolling */
+  top: 0;           /* Aligns the navbar to the top of the page */
+  left: 0;          /* Ensures it spans from the left edge */
+  z-index: 1000;    /* Ensures the navbar is always on top of other content */
+  padding: 0 20px; /* Padding to prevent text from touching the edges */
+  box-sizing: border-box; 
+}
+
+.links {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+body {
+  padding-top: 80px; /* Adds space to prevent content from being hidden behind the navbar */
+}
+@media (max-width: 1024px) {
+  .navbar {
+    height: 70px; /* Reduce height */
+    padding: 0 15px;
+  }
+
+  .links a {
+    font-size: 22px; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 60px;
+    padding: 0 10px;
+  }
+
+  .links a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 50px;
+  }
+
+  .links a {
+    font-size: 18px; /* Small font on mobile */
+  }
+}
